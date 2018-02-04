@@ -88,7 +88,8 @@
         flex-grow: 1;
         display: flex;
         flex-direction: column;
-        margin: 0 0.5rem;
+        margin: 0 0 0.5rem 0;
+        padding: 0 1rem;
         list-style: none;
         li {
             margin: .5rem 0;
@@ -98,11 +99,31 @@
     .mozaik {
         display: flex;
         justify-content: space-around;
+        flex-direction: column;
+        padding: 0 1rem;
+        @media screen and (min-width: 750px) {
+            flex-direction: row;
+            padding: 0;
+        }
         .csempe {
             display: flex;
+            flex-direction: column;
             padding: 1rem;
+            flex-shrink: 0;
             background-color: rgba(255,255,255,.2);
             border-radius: 5px 5px 5px 5px;
+            margin-bottom: 0.5rem;
+            @media screen and (min-width: 750px) {
+                width: 30%;
+            }
+            img {
+                width: 200px;
+                margin: 0 auto;
+            }
+            a {
+                text-align: center;
+                text-decoration: none;
+            }
         }
     }
 }
