@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Andras Toth</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body id="body">
+    <div class="wrapper">
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li class="navbar-list-item navbar-list-item--left" id="home">
+                    <label for="checkbox_gameframe" id="game-btn">
+
+
+                    </label>
+                </li>
+                <div class="navbar-helper home" id="home-hover">
+                    back to main page...
+                </div>
+
+                <li class="navbar-list-item" id="game">
+                    <label for="checkbox_gameframe" class="btn btn-bored" id="game-btn">
+                        <i class="fa fa-home fa-2x" aria-hidden="true"></i><i class="fa fa-gamepad fa-2x" aria-hidden="true"></i>
+                    </label>
+                </li>
+                <div class="navbar-helper facebook" id="game-hover">
+                    play my simple Colorgame...
+                </div>
+
+                <li class="navbar-list-item" id="facebook">
+                    <a href="https://www.facebook.com/ostux" target="_blank">
+                        <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <div class="navbar-helper facebook" id="facebook-hover">
+                    follow me on facebook
+                </div>
+
+                <li class="navbar-list-item" id="github">
+                    <a href="https://github.com/ostux" target="_blank">
+                        <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <div class="navbar-helper" id="github-hover">
+                    check me on github
+                </div>
+
+                <li class="navbar-list-item" id="mailto">
+                    <a href="mailto:andras@andrastoth.eu" target="_blank">
+                        <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <div class="navbar-helper" id="mailto-hover">
+                    contact by e-mail
+                </div>
+
+                <li class="navbar-list-item" id="download">
+                    <a href="doc/CV_Andras_Toth.pdf" target="_blank">
+                       <i class="fa fa-download fa-2x" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <div class="navbar-helper" id="download-hover">
+                    download my resume
+                </div>
+            </ul>
+        </nav>
+
+        <input type="checkbox" name="checkbox" id="checkbox_gameframe" value="value">
+        <div id="gameframe">
+            <div class="gamehead">
+                <div class="gamescore" id="gamescore">
+                    <label class="label-left">score:</label>
+                    <label class="label-right" id="scoreLabel">0</label>
+                </div>
+                <div class="gametime">
+                    <div id="timebar"></div>
+                </div>
+                <div class="gameColorQuestion">
+                    <div id="gameColor"></div>
+                </div>
+            </div>
+            <div class="gamebody">
+                <div id="gameButtonLeft" onmousedown="mDown(0)" onmouseup="mUp(this)"></div>
+                <div id="gameButtonRight" onmousedown="mDown(1)" onmouseup="mUp(this)"></div>
+            </div>
+            <div class="gamecontrol">
+                <button id="startbutton" onclick="startGame()">start</button>
+                <button id="stopbutton" onclick="stopGame()">stop</button>
+            </div>
+        </div>
+
+        <div class="well" id="home-page">
+            <div class="name">Andras Toth</div>
+            <p class="your-new">
+            </p>
+
+            <ul>
+                <li>I have passion to the web development and programing since I was 13. I have spent the last decade in mostly in management in retail. Howewer I want to move forward and deal with what I am truly passionate about... and that is web development.</li>
+                <li>My skill sets and how I feel I'm good with it:</li>
+                <li>
+                    <div>
+                      <div class="bar">
+                        <div class="fill" style="width:90%">
+                          <div class="skill">HTML</div>
+                        </div>
+                        <span>90%</span>
+                      </div>
+
+                      <div class="bar">
+                        <div class="fill" style="width:85%">
+                          <div class="skill">CSS</div>
+                        </div>
+                        <span>85%</span>
+                      </div>
+
+                      <div class="bar">
+                        <div class="fill" style="width:80%">
+                          <div class="skill">Bootstrap</div>
+                        </div>
+                        <span>80%</span>
+                      </div>
+
+                      <div class="bar">
+                        <div class="fill" style="width:75%">
+                          <div class="skill">JavaScript</div>
+                        </div>
+                        <span>75%</span>
+                      </div>
+
+                      <div class="bar">
+                        <div class="fill" style="width:70%">
+                          <div class="skill">Php</div>
+                        </div>
+                        <span>70%</span>
+                      </div>
+
+                      <div class="bar">
+                        <div class="fill" style="width:65%">
+                          <div class="skill">Sass</div>
+                        </div>
+                        <span>65%</span>
+                      </div>
+
+                      <div class="bar">
+                        <div class="fill" style="width:60%">
+                          <div class="skill">Git</div>
+                        </div>
+                        <span>60%</span>
+                      </div>
+
+                      <div class="bar">
+                        <div class="fill" style="width:60%">
+                          <div class="skill">TypeScript</div>
+                        </div>
+                        <span>60%</span>
+                      </div>
+
+
+
+                      <div class="bar">
+                        <div class="fill" style="width:60%">
+                          <div class="skill">SQL</div>
+                        </div>
+                        <span>60%</span>
+                      </div>
+
+                      <div class="bar">
+                        <div class="fill" style="width:55%">
+                          <div class="skill">Laravel</div>
+                        </div>
+                        <span>55%</span>
+                      </div>
+
+                      <div class="bar">
+                        <div class="fill" style="width:50%">
+                          <div class="skill">Angular</div>
+                        </div>
+                        <span>50%</span>
+                      </div>
+
+                      <div class="bar">
+                        <div class="fill" style="width:40%">
+                          <div class="skill">Node.js</div>
+                        </div>
+                        <span>40%</span>
+                      </div>
+                    </div>
+
+                </li>
+            </ul>
+
+<!--             <div class="mozaik">
+                <div class="csempe">a</div>
+                <div class="csempe">b</div>
+                <div class="csempe">c</div>
+            </div> -->
+
+            <!-- <button class="hire-me-btn">available for hire</button> -->
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+    <script src="js/colorgame.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/1.1.0/trianglify.min.js"></script>
+
+<script>
+    var options = {
+        width: window.innerWidth,
+        height: window.innerHeight,
+    };
+
+    function makePoly(pattern) {
+        document.getElementById("body").setAttribute("style", "background-image: url(" + pattern.png() + "); background-repeat: no-repeat; background-size: cover;");
+    }
+
+    makePoly( Trianglify(options) );
+
+    // RESIZE TIMEOUT
+    window.onresize = (function(){
+        clearTimeout(this.id);
+        options = {
+              width: window.innerWidth,
+              height: window.innerHeight,
+        };
+        this.id = setTimeout(doneResizing, 200);
+    });
+
+    // GENERATE PATTERN WHEN RESIZING FINISHED
+    function doneResizing(){
+        var pattern = Trianglify(options);
+        makePoly(pattern);
+    }
+
+</script>
+</body>
+</html>

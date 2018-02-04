@@ -1,0 +1,53 @@
+$body-background: gray;
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    background-color: lightgreen;
+
+}
+
+body {
+    background-attachment: fixed !important;
+}
+
+.wrapper {
+    display: block;
+    width: 100%;
+    min-height: 100%;
+    padding: 1rem 2rem;
+    height: 100%;
+    overflow: scroll;
+}
+
+#checkbox_gameframe {
+    display: none;
+    left: -9999px;
+    top: -9999px;
+
+    &:checked ~ #gameframe {
+        display: block;
+        margin: 0 auto;
+
+    }
+    &:checked ~ #home-page {
+        display: none;
+
+    }
+}
+
+
+
+@media screen and (min-width: 600px) {
+
+}
+
+

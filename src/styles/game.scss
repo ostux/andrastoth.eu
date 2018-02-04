@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Frijole');
+
+#gameframe {
+    display: none;
+    width: 100%;
+    max-width: 500px;
+    height: 600px;
+    background-color: rgba(0,0,0,.2);
+    padding: 0;
+    border-radius: 5px 1em 5px  50% / 50px;
+    font-family: 'Frijole', cursive !important;
+    order: 1;
+    @media screen and (max-width: 600px) {
+        order: 2;
+    }
+}
+.gamehead {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 45%;
+    clear: both;
+}
+.gamescore {
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 33.3333%;
+}
+@media screen and (max-width: 600px) {
+    .gamescore {
+        font-size: 2rem;
+    }
+}
+.label-left {
+    height: 100%;
+    float: left;
+    padding-left: 10px;
+}
+.label-right {
+    height: 100%;
+    float: right;
+    padding-right: 10px;
+}
+.gametime {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 33.3333%;
+}
+#timebar {
+    background: -webkit-linear-gradient(left, lightpink , lightgreen); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, lightpink, lightgreen); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, lightpink, lightgreen); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, lightpink , lightgreen); /* Standard syntax */
+    box-shadow: 0 0  10px black;
+    border-radius: 10px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 5%;
+    top: 25%;
+    width: 90%;
+    height: 50%;
+}
+.gameColorQuestion {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 33.3333%;
+}
+#gameColor {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 3rem;
+}
+.gamebody {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 45%;
+    clear: both;
+}
+.gamecontrol {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 10%;
+}
+#startbutton,
+#stopbutton {
+    width: 40%;
+    height: 90%;
+    float: right;
+    border-radius: 10px;
+    background-color: rgba(239, 251, 255,.75);
+    font-size: 2rem;
+    margin: 0 5%;
+    border: none;
+}
+#startbutton {
+    display: block;
+    box-shadow: 0 0 5px gray;
+}
+#stopbutton {
+    display: none;
+}
+#gameButtonLeft {
+    width: 44%;
+    height: 90%;
+    float: left;
+}
+#gameButtonRight {
+    width: 44%;
+    height: 90%;
+    float: right;
+}
+#gameButtonRight,
+#gameButtonLeft {
+    box-shadow: 0 0  10px black;
+    border-radius: 10px;
+    margin: 0 3%;
+}
