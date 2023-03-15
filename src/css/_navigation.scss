@@ -1,0 +1,26 @@
+nav {
+  flex-grow: 0;
+  width: 100%;
+  height: 3rem;
+  padding: 1rem;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid rgba(255,255,255,0.25);
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: flex-end;
+    li {
+      display: flex;
+      padding-left: 2rem;
+    }
+  }
+}
+
+
+@media (max-width: $layout-breakpoint-small) {
+  nav > ul > li > a > span {
+    display: none;
+  }
+}

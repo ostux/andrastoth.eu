@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+@import "_vars";
+@import "_reset";
+
+
+@import "_navigation";
+@import "_main";
+@import "_footer";
+
+body {
+  background: linear-gradient($backgroundColorFrom, $backgroundColorFrom, $backgroundColorTo) $backgroundColorFrom;
+  color: $color;
+  font-family: 'Indie Flower', cursive;
+  font-size: 18px;
+  main {
+    display: flex;
+  }
+  .spacer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-grow: 1;
+  }
+}
