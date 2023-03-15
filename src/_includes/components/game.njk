@@ -1,0 +1,26 @@
+<div id="gameframe">
+  <div class="gamehead">
+    <div class="gamescore" id="gamescore">
+      <label class="label-left">score:</label>
+      <label class="label-right" id="scoreLabel">0</label>
+    </div>
+    <div class="gametime">
+      <div id="timebar"></div>
+    </div>
+    <div class="gameColorQuestion">
+      <div id="gameColor"></div>
+    </div>
+  </div>
+  <div class="gamebody">
+    <div id="gameButtonLeft" onmousedown="mDown(0)" onmouseup="mUp(this)"></div>
+    <div
+      id="gameButtonRight"
+      onmousedown="mDown(1)"
+      onmouseup="mUp(this)"
+    ></div>
+  </div>
+  <div class="gamecontrol">
+    <button id="startbutton" onclick="startGame()">start</button>
+    <button id="stopbutton" onclick="stopGame()">stop</button>
+  </div>
+</div>
